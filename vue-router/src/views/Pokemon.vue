@@ -1,5 +1,8 @@
 <template>
-  <div class="poke-card">
+  <div
+    class="poke-card"
+    v-tilt="{ speed: 300, perspective: 1200, glare: true }"
+  >
     <h2 class="card-name">{{ PokemonData.name }}</h2>
     <ul class="card-image-list">
       <img class="card-image" :src="spriteFront" alt="" />
